@@ -1,0 +1,107 @@
+{
+    "info": {
+        "_postman_id": "5d92451a-eee4-4cd5-b48e-ab9fbb404d01",
+        "name": "Evaluaciones",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "Crear Evaluacion",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/api/evaluaciones/usuario/",
+                    "path": [
+                        "api",
+                        "evaluaciones",
+                        "usuario"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n    \"nombre\": \"Logica\",\n    \"puntaje\": 4,\n    \"peso\": 3.5,\n    \"fecha_evaluacion\": \"2024-11-23T05:00:00.000Z\",\n    \"usuario_id\": 4,\n    \"createdAt\": \"2024-12-13T03:57:03.000Z\",\n    \"updatedAt\": \"2024-12-13T21:49:26.000Z\"\n  }"
+                }
+            }
+        },
+        {
+            "name": "Obtener Evaluacion por Usuario",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3000/api/evaluaciones/usuario/4",
+                    "path": [
+                        "api",
+                        "evaluaciones",
+                        "usuario",
+                        "4"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        },
+        {
+            "name": "Actualizar Evaluacion",
+            "request": {
+                "method": "PATCH",
+                "url": {
+                    "raw": "http://localhost:3000/api/evaluaciones/usuario/31",
+                    "path": [
+                        "api",
+                        "evaluaciones",
+                        "usuario",
+                        "31"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n    \"nombre\": \"Logica\",\n    \"puntaje\": 5,\n    \"peso\": 3.5,\n    \"fecha_evaluacion\": \"2024-11-23T05:00:00.000Z\",\n    \"usuario_id\": 4,\n    \"createdAt\": \"2024-12-13T03:57:03.000Z\",\n    \"updatedAt\": \"2024-12-13T21:49:26.000Z\"\n  }"
+                }
+            }
+        },
+        {
+            "name": "Eliminar Evaluacion",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:3000/api/evaluaciones/usuario/31",
+                    "path": [
+                        "api",
+                        "evaluaciones",
+                        "usuario",
+                        "31"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        }
+    ]
+}

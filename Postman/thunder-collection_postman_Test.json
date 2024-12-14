@@ -1,0 +1,28 @@
+{
+    "info": {
+        "_postman_id": "05fe6a52-b8de-4280-8419-25d837b1312b",
+        "name": "Test",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "test-db",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3000/ping/test-db",
+                    "path": [
+                        "ping",
+                        "test-db"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                }
+            }
+        }
+    ]
+}
